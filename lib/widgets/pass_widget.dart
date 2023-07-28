@@ -20,7 +20,7 @@ class _PassFieldWidgetState extends State<PassFieldWidget> {
         AutovalidateMode.onUserInteraction,
         validator: (value) {
           if (value!.isEmpty){ 
-            return null;}
+            return 'this field is required';}
           
           return null;
         },

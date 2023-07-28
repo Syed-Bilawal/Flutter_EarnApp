@@ -33,7 +33,7 @@ class TextFieldWidget extends StatelessWidget {
       //  },
        validator: (String?Value){
         if(Value!.isEmpty){
-          return null;
+          return 'this field is required';
         }
         if (validator!= null){
           return validator!(Value);
